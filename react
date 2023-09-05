@@ -1,0 +1,17 @@
+// src/App.js
+
+export default function App() {
+  return (
+    <main>
+      <Navbar showTitle={true} />
+    </main>
+  );
+}
+
+function Navbar({ showTitle }) {
+  return (
+    <div>
+      {showTitle && <h1>My Special App</h1>}
+    </div>
+  )
+}
